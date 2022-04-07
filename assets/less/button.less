@@ -1,0 +1,67 @@
+// btn
+&.btn-text {
+    color: #5786FF;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    &:hover{
+        opacity: 0.8;
+    }
+    &:focus{
+        box-shadow: none !important;
+        border: 0;
+        outline: none;
+    }
+}
+.btn-custom {
+    width: auto;
+    height: auto;
+    padding: @space16 @space24;
+    font-family: 'PlusJakartaSans-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 164%;
+    display: inline-block;
+    
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+    
+    // btn Icon
+    &.w-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    // btn Primary
+    &.first-btn {
+        background: radial-gradient(93.33% 93.33% at 6.25% 6.67%, rgba(109, 150, 255, 0.12) 0%, rgba(87, 134, 255, 0.12) 100%);
+        backdrop-filter: blur(8px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 16px;
+        color: #5786FF;
+        padding: 21px 61px;
+        
+        @media (max-width: 767px) {
+            padding: 16px 32px;
+        }
+    }
+    
+    // btn Secondary
+    &.secon-btn {
+        background-color: transparent;
+        border: 1px solid #121620;
+        box-sizing: border-box;
+        border-radius: 12px;
+        color: #121620;
+    }
+    
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+        text-decoration: none;
+    }
+    
+}
